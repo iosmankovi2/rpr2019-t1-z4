@@ -1,7 +1,5 @@
 package ba.unsa.etf.rpr;
 
-import java.util.*;
-
 public class Korpa {
 
     private Artikl[] artikl = new Artikl[50]; //maksimalno 50 artikala
@@ -20,7 +18,7 @@ public class Korpa {
         return artikl;
     }
 
-    public <String> Artikl izbaciArtiklSaKodom(String kod) {
+    public  Artikl izbaciArtiklSaKodom(String kod) {
         for(int i = 0; i < broj; i++) {
 
             if(artikl[i].getKod().equals(kod)) {
