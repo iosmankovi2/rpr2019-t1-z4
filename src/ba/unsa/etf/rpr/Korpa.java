@@ -18,7 +18,7 @@ public class Korpa {
         return artikl;
     }
 
-    public  Artikl izbaciArtiklSaKodom(String kod) {
+    public Artikl izbaciArtiklSaKodom(String kod) {
         for(int i = 0; i < broj; i++) {
 
             if(artikl[i].getKod().equals(kod)) {
@@ -31,7 +31,7 @@ public class Korpa {
         return null;
     }
 
-    public int dajUkupnuCijenuArtikla() {
+    public int dajUkupnuCijenuArtikala() {
         int ukupna_cijena = 0;
         for(int i = 0; i < broj; i++) {
             ukupna_cijena = ukupna_cijena + artikl[i].getCijena();
